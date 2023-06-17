@@ -28,7 +28,7 @@ spec:
            name: mymap   # this should match the config map name created in the first step
            items:
            - key: configmap2.conf
-             path: configmap2.conf
+             path: /home/pranit/configmap2.conf
         
         
 ---
