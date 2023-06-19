@@ -19,16 +19,7 @@ spec:
         image: thetips4you/nodeapp:latest
         ports:
         - containerPort: 3000
-        volumeMounts:
-          - name: testconfigmap
-            mountPath: "/tmp/config" 
-      volumes:
-      - name: testconfigmap
-        configMap:
-           name: mymap   # this should match the config map name created in the first step
-           items:
-           - key: configmap2.conf
-             path: configmap2.conf
+        
         
         
 ---
